@@ -240,7 +240,7 @@ input[type=checkbox].css-checkbox10:checked + label i.css-label10 {
 .copy-right a:hover{
 	color:#000;
 }
-/**//end-copy-right**/
+/**end-copy-right**/
 /*----start-responsive design-----*/
 @media only screen and (max-width:1680px) and (min-width:1440px) {
 	.main{

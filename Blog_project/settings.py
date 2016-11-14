@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ukw6-mme4i0#=-1rjj_70&oawibrw)y0m42x6vqrou40gv%sdo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'myblog',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '013534Aa',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -102,10 +102,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # log setting
 LOGGING = {
@@ -197,9 +194,12 @@ AUTH_USER_MODEL = "myBlog.User"
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
-
-#社交链接
+# 社交链接
 GITHUB_URL = "https://github.com/Loner-Skywalker"
 EMAIL_URL = "mailto:853438532@qq.com"
 SINA_URL = "http://weibo.com/3277566274/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1"
 ZHIHU_URL = "https://www.zhihu.com/people/yin-jia-kang-74"
+
+ALLOWED_HOSTS = ['*']
+
+BLOG_OWNER = "Loner"
