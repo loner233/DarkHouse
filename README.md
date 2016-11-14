@@ -12,8 +12,9 @@ __4__.MySQL-Python == 1.2.5
 
 
 **step 1:**
-    __1__.Set the USER and PASSWORD of your Mysql in file Blog_project/settings
-    __2__.Set the blog_owner in file Blog_project/settings
+    1.Set the USER and PASSWORD of your Mysql in file Blog_project/settings
+    2.Set the SITE_URL with your server ip in file Blog_project/settings
+    3.Set the blog_owner in file Blog_project/settings
 
 
 
