@@ -1,4 +1,3 @@
-/*导航当前页高亮*/
 
 var obj=null;
 var As=document.getElementById('topnav').getElementsByTagName('a');

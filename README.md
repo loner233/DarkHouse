@@ -1,26 +1,30 @@
 # Django_Blog
 
 
-Mysql == 1.5.6
-Django == 1.8.2
-Pillow == 3.4.2
-MySQL-Python == 1.2.5
+__1__.Mysql == 1.5.6
+__2__.Django == 1.8.2
+__3__.Pillow == 3.4.2
+__4__.MySQL-Python == 1.2.5
 
 
-step 1:
-    1.Set the USER and PASSWORD of your Mysql in file Blog_project/settings
-    2.Set the blog_owner in file Blog_project/settings
+#I recommend using nginx+uwsgi to deployment server; #
+#and I have set the dubug false,so staticfile will not correctly load without static server#
+
+
+**step 1:**
+    __1__.Set the USER and PASSWORD of your Mysql in file Blog_project/settings
+    __2__.Set the blog_owner in file Blog_project/settings
 
 
 
-step 2:
+**step 2:**
 Create the database named 'myblog'
 
 
-step 3:
+**step 3:**
 Run "python manage.py syncdb" to set the admin
 
 
-step 4:
+**step 4:**
 enjoy it!
 

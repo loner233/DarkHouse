@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'myblog',
-        'USER': 'root',
-        'PASSWORD': '013534Aa',
+        'USER': '********',
+        'PASSWORD': '********',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -88,9 +88,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-CN'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -185,7 +185,7 @@ LOGGING = {
 # info of mysite
 SITE_NAME = "Loner的个人博客"
 SITE_DESC = "在群体中的神性，变幻中的救赎，一个生命，无数的变化。"
-SITE_URL = "http://127.0.0.1:8000/"
+SITE_URL = "************"
 
 # User_model
 AUTH_USER_MODEL = "myBlog.User"
