@@ -24,8 +24,7 @@ __4__.MySQL-Python == 1.2.5
     
 3.Set the blog_owner in file Blog_project/settings  
     
-
-
+4.Set the personal information in the file Blog_project/settings
 
 **step 2:**
 Create the database named 'myblog'

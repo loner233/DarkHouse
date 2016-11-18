@@ -183,9 +183,9 @@ LOGGING = {
 }
 
 # info of mysite
-SITE_NAME = "Loner的个人博客"
-SITE_DESC = "在群体中的神性，变幻中的救赎，一个生命，无数的变化。"
-SITE_URL = "************"
+SITE_NAME = ""
+SITE_DESC = ""
+SITE_URL = ""
 
 # User_model
 AUTH_USER_MODEL = "myBlog.User"
@@ -194,12 +194,12 @@ AUTH_USER_MODEL = "myBlog.User"
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
-# 社交链接
-GITHUB_URL = "https://github.com/Loner-Skywalker"
-EMAIL_URL = "mailto:853438532@qq.com"
-SINA_URL = "http://weibo.com/3277566274/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1"
-ZHIHU_URL = "https://www.zhihu.com/people/yin-jia-kang-74"
+# social media urls
+GITHUB_URL = ""
+EMAIL_URL = ""
+SINA_URL = ""
+ZHIHU_URL = ""
 
 ALLOWED_HOSTS = ['*']
 
-BLOG_OWNER = "Loner"
+BLOG_OWNER = ""
