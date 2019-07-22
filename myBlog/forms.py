@@ -1,9 +1,4 @@
-# -*- coding:utf-8 -*-
 from django import forms
-from django.conf import settings
-from django.db.models import Q
-from models import User
-import re
 
 
 class LoginForm(forms.Form):

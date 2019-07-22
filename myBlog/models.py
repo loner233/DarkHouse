@@ -1,6 +1,7 @@
-# -*- coding: utf-8 -*-
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from mdeditor.fields import MDTextField
+
 
 # 用户模型.
 # 第一种：采用的继承方式扩展用户信息（本系统采用）
@@ -17,7 +18,7 @@ class User(AbstractUser):
         verbose_name_plural = verbose_name
         ordering = ['-id']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.username
 
 
@@ -29,7 +30,7 @@ class Tag(models.Model):
         verbose_name = '标签'
         verbose_name_plural = verbose_name
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -43,7 +44,7 @@ class Category(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -63,12 +64,13 @@ class ArticleManager(models.Manager):
 class Article(models.Model):
     title = models.CharField(max_length=50, verbose_name='文章标题')
     desc = models.CharField(max_length=50, verbose_name='文章描述')
-    content = models.TextField(verbose_name='文章内容')
+    # content = models.TextField(verbose_name='文章内容')
+    content = MDTextField(verbose_name='文章内容')
     click_count = models.IntegerField(default=0, verbose_name='点击次数')
     is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
-    user = models.ForeignKey(User, verbose_name='用户')
-    category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类')
+    user = models.ForeignKey(User, verbose_name='用户', on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类', on_delete=models.CASCADE)
     tag = models.ManyToManyField(Tag, verbose_name='标签')
     objects = ArticleManager()
 
@@ -77,7 +79,7 @@ class Article(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['-date_publish']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
 
@@ -88,15 +90,15 @@ class Comment(models.Model):
     email = models.EmailField(max_length=50, blank=True, null=True, verbose_name='邮箱地址')
     url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
-    user = models.ForeignKey(User, blank=True, null=True, verbose_name='用户')
-    article = models.ForeignKey(Article, blank=True, null=True, verbose_name='文章')
-    pid = models.ForeignKey('self', blank=True, null=True, verbose_name='父级评论')
+    user = models.ForeignKey(User, blank=True, null=True, verbose_name='用户', on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, blank=True, null=True, verbose_name='文章', on_delete=models.CASCADE)
+    pid = models.ForeignKey('self', blank=True, null=True, verbose_name='父级评论', on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = '评论'
         verbose_name_plural = verbose_name
 
-    def __unicode__(self):
+    def __str__(self):
         return str(self.id)
 
 
@@ -113,7 +115,7 @@ class Links(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
 
@@ -131,5 +133,5 @@ class Ad(models.Model):
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title

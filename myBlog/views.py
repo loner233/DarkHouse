@@ -1,14 +1,14 @@
-# coding:utf-8
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import make_password
 from django.db.models import Count
 from django.shortcuts import render, redirect
 import logging
 from django.conf import settings
-from  django.core.paginator import Paginator, InvalidPage, EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator, InvalidPage, EmptyPage, PageNotAnInteger
 
-from myBlog.models import Category, Article, Comment, Links, Tag, Ad
+from myBlog.models import Category, Article, Comment, Links, Tag, Ad, User
 from myBlog.forms import *
+
 logger = logging.getLogger('blog.views')
 
 
@@ -92,7 +92,7 @@ def article(request):
         comment_form = CommentForm({'author': request.user.username,
                                     'email': request.user.email,
                                     'url': request.user.url,
-                                    'article': id} if request.user.is_authenticated() else{'article': id})
+                                    'article': id} if request.user.is_authenticated() else {'article': id})
         # 获取评论信息
         comments = Comment.objects.filter(article=article).order_by('id')
         comment_list = []
@@ -106,10 +106,8 @@ def article(request):
             if comment.pid is None:
                 comment_list.append(comment)
     except Exception as e:
-        print e
         logger.error(e)
     return render(request, 'article.html', locals())
-
 
 
 # 提交评论
@@ -117,7 +115,7 @@ def comment_post(request):
     try:
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
-            #获取表单信息
+            # 获取表单信息
             comment = Comment.objects.create(username=comment_form.cleaned_data["author"],
                                              email=comment_form.cleaned_data["email"],
                                              url=comment_form.cleaned_data["url"],
@@ -131,14 +129,15 @@ def comment_post(request):
         logger.error(e)
     return redirect(request.META['HTTP_REFERER'])
 
+
 # 注销
 def do_logout(request):
     try:
         logout(request)
     except Exception as e:
-        print e
         logger.error(e)
     return redirect(request.META['HTTP_REFERER'])
+
 
 # 注册
 def do_reg(request):
@@ -148,13 +147,13 @@ def do_reg(request):
             if reg_form.is_valid():
                 # 注册
                 user = User.objects.create(username=reg_form.cleaned_data["username"],
-                                    email=reg_form.cleaned_data["email"],
-                                    url=reg_form.cleaned_data["url"],
-                                    password=make_password(reg_form.cleaned_data["password"]),)
+                                           email=reg_form.cleaned_data["email"],
+                                           url=reg_form.cleaned_data["url"],
+                                           password=make_password(reg_form.cleaned_data["password"]), )
                 user.save()
 
                 # 登录
-                user.backend = 'django.contrib.auth.backends.ModelBackend' # 指定默认的登录验证方式
+                user.backend = 'django.contrib.auth.backends.ModelBackend'  # 指定默认的登录验证方式
                 login(request, user)
                 return redirect(request.POST.get('source_url'))
             else:
@@ -164,6 +163,7 @@ def do_reg(request):
     except Exception as e:
         logger.error(e)
     return render(request, 'reg.html', locals())
+
 
 # 登录
 def do_login(request):
@@ -176,7 +176,7 @@ def do_login(request):
                 password = login_form.cleaned_data["password"]
                 user = authenticate(username=username, password=password)
                 if user is not None:
-                    user.backend = 'django.contrib.auth.backends.ModelBackend' # 指定默认的登录验证方式
+                    user.backend = 'django.contrib.auth.backends.ModelBackend'  # 指定默认的登录验证方式
                     login(request, user)
                 else:
                     return render(request, 'failure.html', {'reason': '登录验证失败'})
@@ -188,9 +188,6 @@ def do_login(request):
     except Exception as e:
         logger.error(e)
     return render(request, 'login.html', locals())
-
-
-
 
 
 def getpage(request, article_list):

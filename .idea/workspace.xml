@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aaf68695-7ffc-48ec-adcc-8bf41a3d68b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Blog_project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/DarkHouse/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DarkHouse/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DarkHouse/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog_project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/DarkHouse/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/all.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/script.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/script.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBlog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBlog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBlog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBlog/templatetags/myfilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/templatetags/myfilter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBlog/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myBlog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/reglogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/css/reglogin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/5794.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/5794.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/author.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/author.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/author2.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/author2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/category.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/category.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/check-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/check-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/comments.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/comments.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/date.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/date.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/date.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/date.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/datepng.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/datepng.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/default.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_04_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_04_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_05_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_05_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_06_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_06_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_07.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_07.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ico_07_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ico_07_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/lanmbq.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/lanmbq.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/lct.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/lct.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/newsbg01.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/newsbg01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/newsbg02.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/newsbg02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/newsbg03.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/newsbg03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/newsbg04.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/newsbg04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ph2.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/ph2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/silde-nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/silde-nav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slide-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/slide-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/spirit.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/spirit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/tags.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/tags.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/time.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/images/time.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/html5.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/html5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/kindeditor-all-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/kindeditor-all-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/kindeditor-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/kindeditor-all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/kindeditor-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/kindeditor-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/kindeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/kindeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/lang/zh_CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/lang/zh_CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/lang/zh_TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/lang/zh_TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/anchor/anchor.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/anchor/anchor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/autoheight/autoheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/autoheight/autoheight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/baidumap/baidumap.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/baidumap/baidumap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/baidumap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/baidumap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/baidumap/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/baidumap/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/clearhtml/clearhtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/clearhtml/clearhtml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/code/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/code/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/code/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/code/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/code/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/code/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/emoticons.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/emoticons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/100.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/100.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/101.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/101.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/102.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/102.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/103.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/103.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/104.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/104.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/105.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/105.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/106.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/106.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/107.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/107.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/108.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/108.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/109.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/109.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/110.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/110.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/111.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/111.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/112.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/112.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/113.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/113.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/114.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/114.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/115.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/115.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/116.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/116.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/117.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/117.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/118.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/118.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/119.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/119.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/120.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/120.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/121.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/121.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/122.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/122.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/123.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/123.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/124.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/124.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/125.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/125.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/126.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/126.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/127.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/127.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/128.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/128.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/129.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/129.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/130.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/130.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/131.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/131.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/132.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/132.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/133.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/133.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/134.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/134.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/17.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/18.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/19.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/20.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/20.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/21.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/22.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/23.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/23.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/24.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/26.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/26.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/27.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/28.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/29.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/30.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/30.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/31.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/32.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/32.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/33.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/34.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/35.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/35.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/36.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/37.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/38.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/39.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/39.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/40.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/41.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/42.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/42.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/43.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/44.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/45.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/45.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/46.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/47.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/48.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/48.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/49.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/50.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/51.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/51.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/52.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/53.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/54.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/54.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/55.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/56.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/57.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/57.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/58.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/59.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/60.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/60.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/61.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/62.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/63.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/63.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/65.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/66.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/67.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/67.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/68.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/69.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/70.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/71.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/71.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/72.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/72.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/73.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/73.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/74.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/74.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/75.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/75.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/76.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/76.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/77.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/77.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/78.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/78.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/79.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/79.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/80.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/80.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/81.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/81.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/82.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/82.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/83.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/83.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/84.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/84.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/85.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/85.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/86.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/86.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/87.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/87.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/88.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/88.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/89.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/89.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/90.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/90.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/91.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/91.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/92.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/92.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/93.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/93.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/94.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/94.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/95.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/95.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/96.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/96.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/97.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/97.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/98.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/98.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/99.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/99.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/emoticons/images/static.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/emoticons/images/static.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/filemanager/filemanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/filemanager/filemanager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/filemanager/images/file-16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/filemanager/images/file-16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/filemanager/images/file-64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/filemanager/images/file-64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/filemanager/images/folder-16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/filemanager/images/folder-16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/filemanager/images/folder-64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/filemanager/images/folder-64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/filemanager/images/go-up.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/filemanager/images/go-up.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/flash/flash.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/flash/flash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/image/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/image/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/image/images/align_left.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/image/images/align_left.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/image/images/align_right.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/image/images/align_right.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/image/images/align_top.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/image/images/align_top.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/image/images/refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/image/images/refresh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/insertfile/insertfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/insertfile/insertfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/lineheight/lineheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/lineheight/lineheight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/link/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/link/link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/map/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/map/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/map/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/map/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/media/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/media/media.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/multiimage/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/multiimage/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/multiimage/images/select-files-en.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/multiimage/images/select-files-en.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/multiimage/images/select-files-zh_CN.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/multiimage/images/select-files-zh_CN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/multiimage/images/swfupload.swf" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/multiimage/images/swfupload.swf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/multiimage/multiimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/multiimage/multiimage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/pagebreak/pagebreak.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/pagebreak/pagebreak.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/plainpaste/plainpaste.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/plainpaste/plainpaste.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/preview/preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/preview/preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/quickformat/quickformat.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/quickformat/quickformat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/table/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/table/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/template/html/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/template/html/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/template/html/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/template/html/2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/template/html/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/template/html/3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/template/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/template/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/plugins/wordpaste/wordpaste.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/plugins/wordpaste/wordpaste.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/common/anchor.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/common/anchor.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/common/blank.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/common/blank.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/common/flash.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/common/flash.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/common/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/common/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/common/media.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/common/media.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/common/rm.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/common/rm.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/default/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/default/background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/default/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/default/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/default/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/default/default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/qq/editor.gif" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/qq/editor.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/qq/qq.css" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/qq/qq.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/kindeditor-4.1.10/themes/simple/simple.css" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/kindeditor-4.1.10/themes/simple/simple.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/modernizr.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/modernizr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog/static/js/sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ad.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/archive.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/archive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tag.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DarkHouse/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DarkHouse/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myBlog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myBlog/upload.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myBlog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myBlog/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myBlog/static/images/ico_06.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myBlog/static/images/ico_04_1.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>__unicode__</find>
+      <find>^</find>
+      <find>$</find>
+      <find>logger.error(e)</find>
+      <find>LOGGING</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>__str__</replace>
+      <replace>pass</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/ad.html" />
+        <option value="$PROJECT_DIR$/templates/archive.html" />
+        <option value="$PROJECT_DIR$/templates/category.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/reg.html" />
+        <option value="$PROJECT_DIR$/templates/tag.html" />
+        <option value="$PROJECT_DIR$/myBlog/templatetags/myfilter.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/templates/article.html" />
+        <option value="$PROJECT_DIR$/myBlog/upload.py" />
+        <option value="$PROJECT_DIR$/myBlog/views.py" />
+        <option value="$PROJECT_DIR$/myBlog/forms.py" />
+        <option value="$PROJECT_DIR$/static/css/base.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/DarkHouse/settings.py" />
+        <option value="$PROJECT_DIR$/DarkHouse/urls.py" />
+        <option value="$PROJECT_DIR$/myBlog/models.py" />
+        <option value="$PROJECT_DIR$/myBlog/admin.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/DarkHouse.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="686" />
+    <option name="y" value="124" />
+    <option name="width" value="1876" />
+    <option name="height" value="971" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DarkHouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DarkHouse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DarkHouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DarkHouse" type="462c0819:PsiDirectoryNode" />
+              <item name="DarkHouse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DarkHouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DarkHouse" type="462c0819:PsiDirectoryNode" />
+              <item name="myBlog" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myBlog" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DarkHouse" type="Python.DjangoServer" factoryName="Django server">
+      <module name="DarkHouse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aaf68695-7ffc-48ec-adcc-8bf41a3d68b7" name="Default Changelist" comment="" />
+      <created>1563785343699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563785343699</updated>
+      <workItem from="1563785346326" duration="3997000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3997000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="0" width="1928" height="1084" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24172892" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3227459" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991803" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" visible="true" weight="0.053361792" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myBlog/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/failure.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pagination.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/success.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/all.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/script.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/templatetags/myfilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/archive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ad.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#49#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DarkHouse/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DarkHouse/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/static/css/reglogin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2808" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/static/images/ico_06.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/static/images/ico_04_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/upload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DarkHouse/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DarkHouse/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myBlog/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
