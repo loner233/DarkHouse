@@ -9656,7 +9656,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     width: 280px;
     background: #3B7EEB;
-    color: #fff
+    color: #fff;
+    z-index: 1;
 }
 
 .header .blog-name {
@@ -9867,7 +9868,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     padding: 1rem;
     font-weight: bold;
-    position: relative
+    /*position: relative*/
 }
 
 .blog-nav .nav-link:hover {
