@@ -15,8 +15,8 @@
             <span class="postmeta_time">{{ article.date_publish | date:'Y-m-d' }}</span>
         </div>
     </div>
-    <div class="entry">
-        {{ article.content | safe }}
+    <div class="entry" id="articlecontent">
+        {{ article.content|safe }}
     </div>
     <span class="tags">
             {% for tag in article.tag.all %}
@@ -63,32 +63,67 @@
         {% endfor %}
     </ol>
     <div id="commentform">
-    <h3 id="respond">评论区.....</h3>
-    {% if not request.user.is_authenticated %}
-    <div class='login_info'>还没有登陆？可以登录后再评论哦。<b><a href="{% url 'login' %}">&raquo;去登录</a>&nbsp;<a href="{% url 'reg' %}">&raquo;去注册</a></b><br>当然不登陆也是可以评论的哦!</div>
-    {% else %}
-    <div class='login_info'><b>{{ request.user.username }}</b>,快来写点评论吧!&nbsp;<a href="{% url 'logout' %}">注销</a></div>
-    {% endif %}
-    <form action="{% url 'comment_post' %}" method="post">
-    {% csrf_token %}
-    <p>{{ comment_form.author }}
-    <label for="author">名字(必填)</label></p>
+        <h3 id="respond">评论区.....</h3>
+        {% if not request.user.is_authenticated %}
+            <div class='login_info'>还没有登陆？可以登录后再评论哦。<b><a href="{% url 'login' %}">&raquo;去登录</a>&nbsp;<a
+                    href="{% url 'reg' %}">&raquo;去注册</a></b><br>当然不登陆也是可以评论的哦!
+            </div>
+        {% else %}
+            <div class='login_info'><b>{{ request.user.username }}</b>,快来写点评论吧!&nbsp;<a href="{% url 'logout' %}">注销</a>
+            </div>
+        {% endif %}
+        <form action="{% url 'comment_post' %}" method="post">
+            {% csrf_token %}
+            <p>{{ comment_form.author }}
+                <label for="author">名字(必填)</label></p>
 
-    <p>{{ comment_form.email }}
-    <label for="email">Email(必填)(邮箱不会被公布)</label></p>
+            <p>{{ comment_form.email }}
+                <label for="email">Email(必填)(邮箱不会被公布)</label></p>
 
-    <p>{{ comment_form.url }}
-    <label for="url">个人主页</label></p>
+            <p>{{ comment_form.url }}
+                <label for="url">个人主页</label></p>
 
-
-    <!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code class=&quot;&quot; title=&quot;&quot; data-url=&quot;&quot;&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; &lt;pre class=&quot;&quot; title=&quot;&quot; data-url=&quot;&quot;&gt; &lt;span class=&quot;&quot; title=&quot;&quot; data-url=&quot;&quot;&gt; </small></p>-->
-
-    <p>{{ comment_form.comment }}</p>
-
-    <p>
-        {{ comment_form.article }}
-        <input name="submit" type="submit" id="submit" tabindex="5" value="Submit" class="button" />
-    </p>
-    </form>
+            <p>{{ comment_form.comment }}</p>
+            <p>
+                {{ comment_form.article }}
+                <input name="submit" type="submit" id="submit" tabindex="5" value="Submit" class="button"/>
+            </p>
+        </form>
     </div>
+{% endblock %}
+
+{% block custom_js %}
+    <script type="text/javascript"
+            src="{% static 'js/Mathjax.js' %}?config=TeX-AMS_HTML-full">
+    </script>
+    <script>
+        let isMathjaxConfig = false; // 防止重复调用Config，造成性能损耗
+
+        const initMathjaxConfig = () => {
+            if (!window.MathJax) {
+                return;
+            }
+            window.MathJax.Hub.Config({
+                showProcessingMessages: false, //关闭js加载过程信息
+                messageStyle: "none", //不显示信息
+                jax: ["input/TeX", "output/HTML-CSS"],
+                tex2jax: {
+                    inlineMath: [["$", "$"], ["\\(", "\\)"]], //行内公式选择符
+                    displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符
+                    skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签
+                },
+                "HTML-CSS": {
+                    availableFonts: ["STIX", "TeX"], //可选字体
+                    showMathMenu: false //关闭右击菜单显示
+                }
+            });
+            isMathjaxConfig = true; //
+        };
+
+        if (isMathjaxConfig === false) { // 如果：没有配置MathJax
+            initMathjaxConfig();
+        }
+        window.MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById('articlecontent')]);
+
+    </script>
 {% endblock %}
