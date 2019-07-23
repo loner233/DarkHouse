@@ -6,137 +6,128 @@
     <title>{{ SITE_NAME }}</title>
     <meta name="keywords" content="{{ SITE_NAME }}"/>
     <meta name="description" content="{{ SITE_DESC }}"/>
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
-    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "css/theme.css" %}>
+    <link href="{% static 'css/modal.css' %}" rel="stylesheet">
+    <link href="{% static 'css/normalize.min.css' %}" rel="stylesheet">
+
     {% block custom_css %}{% endblock %}
-    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/sliders.js' %}"></script>
-    <!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
-    {% block custom_js %}{% endblock %}
 </head>
 <body>
-<header>
-    <div class="logo">
-        <h1>{{ SITE_NAME }}</h1>
-        <p>{{ SITE_DESC }}</p>
-    </div>
-    <nav id="topnav" class="f_r">
-        <ul>
-            <a href="{{ SITE_URL }}">首页</a>
-            {% for category in category_list %}
-                <a href="{% url 'category' %}?name={{ category.name }}">{{ category.name }}</a>
-            {% endfor %}
-        </ul>
-        <script src="{% static 'js/nav.js' %}"></script>
+<header class="header text-center">
+    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Loner's Blog</a></h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navigation" class="collapse navbar-collapse flex-column">
+            <div class="profile-section pt-3 pt-lg-0">
+                <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'images/profile.png' %}"
+                     alt="image">
+
+                {#                <div class="bio mb-3">Hi, my name is Anthony Doe. Briefly introduce yourself here. You can also provide#}
+                {#                    a link to the about page.<br><a href="about.html">Find out more about me</a></div><!--//bio-->#}
+                <ul class="social-list list-inline py-3 mx-auto">
+                    <li class="list-inline-item"><a href="#"><i class="fas fa-envelope-open-text fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
+                </ul><!--//social-list-->
+                <hr>
+            </div><!--//profile-section-->
+
+            <ul class="navbar-nav flex-column text-left">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal__trigger" data-modal="#modal_category" href=""><i
+                            class="fas fa-bookmark fa-fw mr-2"></i>分类</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link modal__trigger" data-modal="#modal_archive" href=""><i
+                            class="fas fa-file-archive fa-fw mr-2"></i>归档</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>关于我</a>
+                </li>
+            </ul>
+            <div id="modal_category" class="modal modal__bg" role="dialog" aria-hidden="true">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <h1>分类</h1>
+                        <a>ml</a>
+                        <!-- modal close button -->
+                        <a href="" class="modal__close close-btn">
+                            <svg class="" viewBox="0 0 24 24">
+                                <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/>
+                                <path d="M0 0h24v24h-24z" fill="none"/>
+                            </svg>
+                        </a></div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="modal_archive" class="modal modal__bg" role="dialog" aria-hidden="true">
+                <div class="modal__dialog">
+                    <div class="modal__content">
+                        <h1>归档</h1>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <p><a href="base.html">2019年12月</a></p>
+                        <!-- modal close button -->
+                        <a href="" class="modal__close close-btn">
+                            <svg class="" viewBox="0 0 24 24">
+                                <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/>
+                                <path d="M0 0h24v24h-24z" fill="none"/>
+                            </svg>
+                        </a></div>
+                </div>
+            </div>
+
+            {#            <div class="my-2 my-md-3">#}
+            {#                <a class="btn btn-primary" href="#" target="_blank">Get in Touch</a>#}
+            {#            </div>#}
+
+        </div>
     </nav>
 </header>
-<article>
-    <div class="l_box f_l">
-        {% block left_content %}{% endblock %}
-    </div>
-    <div class="r_box f_r">
-        <div class="tit01">
-            <h3>关注我</h3>
-            <div class="gzwm">
-                <ul>
-                    <li><a class="xlwb" href="{{ SINA_URL }}" target="_blank">新浪微博</a></li>
-                    <li><a class="zhihu" href="{{ ZHIHU_URL }}" target="_blank">知乎</a></li>
-                    <li><a class="github" href="{{ GITHUB_URL }}" target="_blank">GitHub</a></li>
-                    <li><a class="email" href="{{ EMAIL_URL }}">E-mail</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--tit01 end-->
-        <div class="moreSelect" id="lp_right_select">
-            <script>
-                window.onload = function () {
-                    var oLi = document.getElementById("tab").getElementsByTagName("li");
-                    var oUl = document.getElementById("ms-main").getElementsByTagName("div");
 
-                    for (var i = 0; i < oLi.length; i++) {
-                        oLi[i].index = i;
-                        oLi[i].onmouseover = function () {
-                            for (var n = 0; n < oLi.length; n++) oLi[n].className = "";
-                            this.className = "cur";
-                            for (var n = 0; n < oUl.length; n++) oUl[n].style.display = "none";
-                            oUl[this.index].style.display = "block"
-                        }
-                    }
-                }
-            </script>
-            <div class="ms-top">
-                <ul class="hd" id="tab">
-                    <li class="cur"><a href="/">浏览排行</a></li>
-                    <li><a href="/">评论排行</a></li>
-                    <li><a href="/">站长推荐</a></li>
-                </ul>
-            </div>
-            <div class="ms-main" id="ms-main">
-                <div style="display: block;" class="bd bd-news">
-                    <ul>
-                        {% for article in article_views_list %}
-                            <li><a href="{% url 'article' %}?id={{ article.id }}">{{ article.title | slice:':15' }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="bd bd-news">
-                    <ul>
-                        {% for article in article_comment_list %}
-                            <li><a href="{% url 'article' %}?id={{ article.id }}">{{ article.title | slice:':15' }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="bd bd-news">
-                    <ul>
-                        {% for article in article_recommend_list %}
-                            <li><a href="{% url 'article' %}?id={{ article.id }}">{{ article.title | slice:':15' }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <!--ms-main end -->
-        </div>
-        <!--切换卡 moreSelect end -->
+{% block main_wrapper %}
+{% endblock %}
 
-        <div class="cloud">
-            <h3>标签云</h3>
-            <ul>
-                {% for tag in tag_lists %}
-                    <li><a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="tuwen">
-            <h3>文章归档</h3>
-            <ul>
-                {% for archive in archive_list %}
-                    <li>
-                        <p><span class="tutime font-size-18">
-                            <a href='{% url 'archive' %}?year={{ archive | slice:":4" }}&month={{ archive | slice:"5:7" }}'>{{ archive }}</a></span>
 
-                        </p>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="links">
-            <h3>友情链接</h3>
-            <ul>
-                {% for link in friendly_links_lists %}
-                    <li><a href="{{ link.callback_url }}">{{ link.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <!--r_box end -->
-</article>
-<footer>
-    <p class="ft-copyright">This Blog belongs to {{ BLOG_OWNER }}</p>
-</footer>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+        integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
+        crossorigin="anonymous"></script>
+
+<!-- Javascript -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'js/modal.js' %}"></script>
+
+{% block custom_js %}{% endblock %}
+
 </body>
 </html>
