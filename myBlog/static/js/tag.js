@@ -6,7 +6,7 @@ var active = false;
 var lasta = 1;
 var lastb = 1;
 var distr = true;
-var tspeed = 10;
+var tspeed = 3;
 var size = 250;
 
 var mouseX = 0;

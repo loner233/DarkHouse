@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load myfilter %}
 {% block custom_css %}
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 {% endblock %}
@@ -20,7 +21,6 @@
         {% include 'slide.html' %}
         <section class="blog-list px-3 py-5 p-md-5">
             <div class="container">
-
                 {% for article in article_list %}
                     <div class="item mb-5">
                         <div class="media">
@@ -49,8 +49,26 @@
     </div><!--//main-wrapper-->
 {% endblock %}
 {% block taglist %}
-    <a href="#/Article.aspx?kid=1" title="星级评分">星级评分</a>
-{% endblock %}
+    {% for tag in tag_lists %}
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+
+    {% endfor %}
+
+{% endblock %}s
 {% block custom_js %}
     <script src="{% static 'js/slide.js' %}"></script>
 {% endblock %}

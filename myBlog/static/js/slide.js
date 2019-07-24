@@ -7,6 +7,14 @@ var sliderWidth = $('#slider-wrap').width();
 
 
 $(document).ready(function () {
+    window.onresize = function () {
+        sliderWidth = $('#slider-wrap').width();
+        $('#slider-wrap ul#slider').width(sliderWidth * totalSlides);
+        $('#slider-wrap ul#slider li').width(sliderWidth);
+        // var height = $('#slider-wrap ul#slider li').height();
+        // $('#slider-wrap ul#slider li').height(height / window.innerWidth);
+        slideRight();
+    }
 
 
     /*****************
