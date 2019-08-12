@@ -1,14 +1,14 @@
 <div id="slider-wrap">
     <ul id="slider">
-        {% for ad in ad_lists %}
+        {% for slide in slide_lists %}
             {#            <a href="/" target="_blank"></a>#}
             <li>
-                <img src="uploads/{{ ad.image_url }}" class="img-fluid">
+                <img src="uploads/{{ slide.image_url }}" class="img-fluid">
 
                 <div>
-                    <h3>{{ ad.title }}</h3>
-                    <span>{{ ad.description }}</span>
-                    <img id="{{ ad.index }}" src="" alt=""/>
+                    <h3>{{ slide.title }}</h3>
+                    <span>{{ slide.description }}</span>
+                    <img id="{{ slide.index }}" src="" alt=""/>
                 </div>
             </li>
         {% endfor %}

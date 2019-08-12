@@ -1,31 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load myfilter %}
-{% block custom_css %}
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-{% endblock %}
-{% block archive %}
-    {% for archive in archive_list %}
-        <p>
-            <a href='{% url 'archive' %}?year={{ archive | slice:":4" }}&month={{ archive | slice:"5:7" }}'>{{ archive }}</a>
-        </p>
-    {% endfor %}
-{% endblock %}
-{% block category %}
-    {% for category in category_list %}
-        <a href="{% url 'category' %}?name={{ category.name }}">{{ category.name }}</a>
-    {% endfor %}
-{% endblock %}
+
 {% block main_wrapper %}
     <div class="main-wrapper">
-        {% include 'slide.html' %}
+        {% if not article_list.has_previous %}
+            {% include 'slide.html' %}
+        {% endif %}
         <section class="blog-list px-3 py-5 p-md-5">
             <div class="container">
                 {% for article in article_list %}
                     <div class="item mb-5">
                         <div class="media">
                             <img class="mr-3 img-fluid post-thumb d-none d-md-flex"
-                                 src="assets/images/blog/blog-post-thumb-5.jpg" alt="image">
+                                 src="uploads/{{ article.thumbnail }}" alt="image">
                             <div class="media-body">
                                 <h3 class="title mb-1"><a
                                         href="{% url 'article' %}?id={{ article.id }}">{{ article.title }}</a></h3>
@@ -48,27 +36,6 @@
         {% include 'footer.html' %}
     </div><!--//main-wrapper-->
 {% endblock %}
-{% block taglist %}
-    {% for tag in tag_lists %}
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-        <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
-
-    {% endfor %}
-
-{% endblock %}s
 {% block custom_js %}
     <script src="{% static 'js/slide.js' %}"></script>
 {% endblock %}

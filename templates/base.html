@@ -12,6 +12,7 @@
     <link href="{% static 'css/modal.css' %}" rel="stylesheet">
     <link href="{% static 'css/normalize.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/tag.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
     {% block custom_css %}{% endblock %}
 </head>
 <body>
@@ -29,8 +30,8 @@
                 <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'images/profile.png' %}"
                      alt="image">
 
-                {#                <div class="bio mb-3">Hi, my name is Anthony Doe. Briefly introduce yourself here. You can also provide#}
-                {#                    a link to the about page.<br><a href="about.html">Find out more about me</a></div><!--//bio-->#}
+                {#                                <div class="bio mb-3">Hi, my name is Anthony Doe. Briefly introduce yourself here. You can also provide#}
+                {#                                    a link to the about page.<br><a href="about.html">Find out more about me</a></div><!--//bio-->#}
                 <ul class="social-list list-inline py-3 mx-auto">
                     <li class="list-inline-item"><a href="#"><i class="fas fa-envelope-open-text fa-fw"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
@@ -45,25 +46,30 @@
                     <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>首页</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link modal__trigger" data-modal="#modal_category" href=""><i
+                    <a class="nav-link modal_trigger" data-modal="#modal_category" href=""><i
                             class="fas fa-bookmark fa-fw mr-2"></i>分类</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link modal__trigger" data-modal="#modal_archive" href=""><i
+                    <a class="nav-link modal_trigger" data-modal="#modal_archive" href=""><i
                             class="fas fa-file-archive fa-fw mr-2"></i>归档</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>关于我</a>
                 </li>
             </ul>
-            <div id="modal_category" class="modal modal__bg" role="dialog" aria-hidden="true">
-                <div class="modal__dialog">
-                    <div class="modal__content">
+            <div id="modal_category" class="modal modal_bg" role="dialog" aria-hidden="true">
+                <div class="modal_dialog">
+                    <div class="modal_content">
                         <h1>分类</h1>
-                        {% block category %}
-                        {% endblock %}
+                        {#                        {% block category %}#}
+                        <ul>
+                            {% for category in category_list %}
+                                <li><a href="{% url 'category' %}?name={{ category.name }}">{{ category.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {#                        {% endblock %}#}
                         <!-- modal close button -->
-                        <a href="" class="modal__close close-btn">
+                        <a href="" class="modal_close close-btn">
                             <svg class="" viewBox="0 0 24 24">
                                 <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/>
                                 <path d="M0 0h24v24h-24z" fill="none"/>
@@ -72,13 +78,19 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div id="modal_archive" class="modal modal__bg" role="dialog" aria-hidden="true">
-                <div class="modal__dialog">
-                    <div class="modal__content">
+            <div id="modal_archive" class="modal modal_bg" role="dialog" aria-hidden="true">
+                <div class="modal_dialog">
+                    <div class="modal_content">
                         <h1>归档</h1>
-                        {% block archive %}
-                        {% endblock %}
-                        <a href="" class="modal__close close-btn">
+                        <ul>
+                            {% for archive in archive_list %}
+                                <li>
+                                    <a href='{% url 'archive' %}?year={{ archive | slice:":4" }}&month={{ archive | slice:"5:7" }}'>{{ archive }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                        <a href="" class="modal_close close-btn">
                             <svg class="" viewBox="0 0 24 24">
                                 <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/>
                                 <path d="M0 0h24v24h-24z" fill="none"/>
@@ -87,8 +99,14 @@
                 </div>
             </div>
             <div id="tagsList">
-                {% block taglist %}
-                {% endblock %}
+                {% for tag in tag_lists %}
+                    <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+                    <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+                    <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+                    <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+                    <a href="{% url 'tag' %}?name={{ tag | slice:":4" }}">{{ tag.name }}</a>
+
+                {% endfor %}
             </div>
         </div>
     </nav>

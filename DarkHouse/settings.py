@@ -15,8 +15,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myBlog',
     'mdeditor',
+    'sorl.thumbnail',
+    'myBlog',
 )
 
 MIDDLEWARE = [
@@ -66,7 +67,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -89,10 +89,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'myBlog/static')
-
 
 # info of mysite
 SITE_NAME = ""
@@ -113,7 +111,6 @@ SINA_URL = ""
 ZHIHU_URL = ""
 
 BLOG_OWNER = ""
-
 
 # log setting
 # LOGGING = {

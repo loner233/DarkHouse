@@ -1,13 +1,14 @@
+import logging
+import traceback
+
+from django.conf import settings
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.hashers import make_password
-from django.db.models import Count
-from django.shortcuts import render, redirect
-import logging
-from django.conf import settings
 from django.core.paginator import Paginator, InvalidPage, EmptyPage, PageNotAnInteger
+from django.shortcuts import render, redirect
 
-from myBlog.models import Category, Article, Comment, Links, Tag, Ad, User
 from myBlog.forms import *
+from myBlog.models import Category, Article, Comment, Links, Tag, Slide, User
 
 logger = logging.getLogger('blog.views')
 
@@ -24,13 +25,14 @@ def global_settings(request):
     category_list = Category.objects.all().order_by('index')
     archive_list = Article.objects.distinct_date()
     friendly_links_lists = Links.objects.all()
-    ad_lists = Ad.objects.all()
+    slide_lists = Slide.objects.all()
+    print(slide_lists)
     tag_lists = Tag.objects.all()
-    comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by(
-        '-comment_count')
-    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
-    article_views_list = Article.objects.all().order_by('-click_count')[:6]
-    article_recommend_list = Article.objects.filter(is_recommend=True).order_by('-date_publish')[:6]
+    # comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by(
+    #     '-comment_count')
+    # article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+    # article_views_list = Article.objects.all().order_by('-click_count')[:6]
+    # article_recommend_list = Article.objects.filter(is_recommend=True).order_by('-date_publish')[:6]
     return locals()
 
 
@@ -52,7 +54,7 @@ def archive(request):
         article_list = getpage(request, article_list)
     except Exception as e:
         logger.error(e)
-    return render(request, 'archive.html', locals())
+    return render(request, 'list.html', locals())
 
 
 # 标签详情
@@ -63,7 +65,7 @@ def tag(request):
         article_list = getpage(request, article_list)
     except Exception as e:
         logger.error(e)
-    return render(request, 'tag.html', locals())
+    return render(request, 'list.html', locals())
 
 
 # 分类详情
@@ -74,39 +76,48 @@ def category(request):
         article_list = getpage(request, article_list)
     except Exception as e:
         logger.error(e)
-    return render(request, 'category.html', locals())
+    return render(request, 'list.html', locals())
 
 
 # 文章详情
 def article(request):
     try:
         # 获取文章id
-        id = request.GET.get('id', None)
-        try:
-            # 获取文章信息
-            article = Article.objects.get(pk=id)
-        except Article.DoesNotExist:
-            return render(request, 'failure.html', {'reason': '没有找到对应的文章'})
 
+        id = request.GET.get('id', None)
+        # 获取文章信息
+        article = Article.objects.get(pk=id)
+        if not article:
+            return render(request, 'failure.html', {'reason': '没有找到对应的文章'})
+        print(type(article))
+        prev_article = article.get_previous_in_order()
+        next_article = article.get_next_in_order()
+
+        article.click_count += 1
+        article.save()
         # 评论表单
-        comment_form = CommentForm({'author': request.user.username,
-                                    'email': request.user.email,
-                                    'url': request.user.url,
-                                    'article': id} if request.user.is_authenticated() else {'article': id})
+        # comment_form = CommentForm({'author': request.user.username,
+        #                             'email': request.user.email,
+        #                             'url': request.user.url,
+        #                             'article': id} if request.user.is_authenticated() else {'article': id})
         # 获取评论信息
-        comments = Comment.objects.filter(article=article).order_by('id')
-        comment_list = []
-        for comment in comments:
-            for item in comment_list:
-                if not hasattr(item, 'children_comment'):
-                    setattr(item, 'children_comment', [])
-                if comment.pid == item:
-                    item.children_comment.append(comment)
-                    break
-            if comment.pid is None:
-                comment_list.append(comment)
+        # comments = Comment.objects.filter(article=article).order_by('id')
+        # comment_list = []
+        # for comment in comments:
+        #     for item in comment_list:
+        #         if not hasattr(item, 'children_comment'):
+        #             setattr(item, 'children_comment', [])
+        #         if comment.pid == item:
+        #             item.children_comment.append(comment)
+        #             break
+        #     if comment.pid is None:
+        #         comment_list.append(comment)
+
+
     except Exception as e:
+        # print(e.with_traceback())
         logger.error(e)
+        traceback.print_exc()
     return render(request, 'article.html', locals())
 
 

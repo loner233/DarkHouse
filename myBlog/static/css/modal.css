@@ -28,7 +28,7 @@
     /*transition-delay: $ modal-delay;*/
 }
 
-.modal--active {
+.modal-active {
     visibility: visible;
     opacity: 1;
 }
@@ -39,23 +39,23 @@
     align-items: flex-start;
 }
 
-.modal__bg {
+.modal_bg {
     background: transparent;
 }
 
-.modal__dialog {
+.modal_dialog {
     max-width: 600px;
     padding: 1.2rem;
     width: 33%;
 }
 
 @media (max-width: 600px) {
-    .modal__dialog {
+    .modal_dialog {
         width: 66%;
     }
 }
 
-.modal__content {
+.modal_content {
     will-change: transform, opacity;
     position: relative;
     padding: 2.4rem;
@@ -67,20 +67,20 @@
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.modal__content--active {
+.modal_content-active {
     opacity: 1;
 }
 
-.modal__content p {
+.modal_content p {
     color: #424242;
 }
 
-.modal__close {
+.modal_close {
     z-index: 1100;
     cursor: pointer;
 }
 
-.modal__trigger {
+.modal_trigger {
     position: relative;
     display: inline-block;
     /*padding: 1.2rem 2.4rem;*/
@@ -98,15 +98,15 @@
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.modal__trigger--active {
+.modal_trigger-active {
     z-index: 10;
 }
 
-/*.modal__trigger:hover {*/
+/*.modal_trigger:hover {*/
 /*    background: #e5d3d6;*/
 /*}*/
 
-#modal__temp {
+#modal_temp {
     will-change: transform, opacity;
     position: absolute;
     top: 0;

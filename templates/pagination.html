@@ -1,4 +1,53 @@
 <nav class="blog-nav nav nav-justified my-5">
-    <a class="nav-link-prev nav-item nav-link rounded-left" href="#">Previous</a>
-    <a class="nav-link-next nav-item nav-link rounded-right" href="#">Next</a>
+    {% if article_list.has_previous and not article_list.has_next %}
+        <a class="nav-link-prev nav-item nav-link  rounded" href="
+            ?page={{ article_list.previous_page_number }}
+            {% if request.GET.year %}
+                &year={{ request.GET.year }}
+            {% endif %}
+            {% if request.GET.month %}
+                &month={{ request.GET.month }}
+            {% endif %}
+            {% if request.GET.cid %}
+                &cid={{ request.GET.cid }}
+            {% endif %}">Previous</a>
+        <a class="nav-link-next nav-item nav-link d-none rounded-right" href="#">Next</a>
+    {% elif not article_list.has_previous and article_list.has_next %}
+        <a class="nav-link-prev nav-item nav-link d-none rounded-right" href="#">Previous</a>
+        <a class="nav-link-next nav-item nav-link rounded" href="
+            ?page={{ article_list.next_page_number }}
+            {% if request.GET.year %}
+                &year={{ request.GET.year }}
+            {% endif %}
+            {% if request.GET.month %}
+                &month={{ request.GET.month }}
+            {% endif %}
+            {% if request.GET.cid %}
+                &cid={{ request.GET.cid }}
+            {% endif %}">Next</a>
+    {% elif article_list.has_previous and article_list.has_next %}
+        <a class="nav-link-prev nav-item nav-link rounded-left" href="
+            ?page={{ article_list.previous_page_number }}
+            {% if request.GET.year %}
+                &year={{ request.GET.year }}
+            {% endif %}
+            {% if request.GET.month %}
+                &month={{ request.GET.month }}
+            {% endif %}
+            {% if request.GET.cid %}
+                &cid={{ request.GET.cid }}
+            {% endif %}">Previous</a>
+        <a class="nav-link-next nav-item nav-link rounded-right" href="
+            ?page={{ article_list.next_page_number }}
+            {% if request.GET.year %}
+                &year={{ request.GET.year }}
+            {% endif %}
+            {% if request.GET.month %}
+                &month={{ request.GET.month }}
+            {% endif %}
+            {% if request.GET.cid %}
+                &cid={{ request.GET.cid }}
+            {% endif %}">Next</a>
+    {% endif %}
+
 </nav>

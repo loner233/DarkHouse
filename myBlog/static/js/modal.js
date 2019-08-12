@@ -1,10 +1,9 @@
 var Modal = (function () {
 
-    var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
+    var trigger = $qsa('.modal_trigger'); // what you click to activate the modal
     var modals = $qsa('.modal'); // the entire modal (takes up entire window)
-    var modalsbg = $qsa('.modal__bg'); // the entire modal (takes up entire window)
-    var content = $qsa('.modal__content'); // the inner content of the modal
-    var closers = $qsa('.modal__close'); // an element used to close the modal
+    var content = $qsa('.modal_content'); // the inner content of the modal
+    var closers = $qsa('.modal_close'); // an element used to close the modal
     var w = window;
     var isOpen = false;
     var contentDelay = 400; // duration after you click the button and wait for the content to show
@@ -32,7 +31,7 @@ var Modal = (function () {
 
     var makeDiv = function (self, modal) {
 
-        var fakediv = document.getElementById('modal__temp');
+        var fakediv = document.getElementById('modal_temp');
 
         /**
          * if there isn't a 'fakediv', create one and append it to the button that was
@@ -41,7 +40,7 @@ var Modal = (function () {
 
         if (fakediv === null) {
             var div = document.createElement('div');
-            div.id = 'modal__temp';
+            div.id = 'modal_temp';
             self.appendChild(div);
             moveTrig(self, modal, div);
         }
@@ -50,13 +49,13 @@ var Modal = (function () {
     var moveTrig = function (trig, modal, div) {
         var trigProps = trig.getBoundingClientRect();
         var m = modal;
-        var mProps = m.querySelector('.modal__content').getBoundingClientRect();
+        var mProps = m.querySelector('.modal_content').getBoundingClientRect();
         var transX, transY, scaleX, scaleY;
         var xc = w.innerWidth / 2;
         var yc = w.innerHeight / 2;
 
         // this class increases z-index value so the button goes overtop the other buttons
-        trig.classList.add('modal__trigger--active');
+        trig.classList.add('modal_trigger-active');
 
         // these values are used for scale the temporary div to the same size as the modal
         scaleX = mProps.width / trigProps.width;
@@ -96,11 +95,11 @@ var Modal = (function () {
 
         if (!isOpen) {
             // select the content inside the modal
-            var content = m.querySelector('.modal__content');
+            var content = m.querySelector('.modal_content');
             // reveal the modal
-            m.classList.add('modal--active');
+            m.classList.add('modal-active');
             // reveal the modal content
-            content.classList.add('modal__content--active');
+            content.classList.add('modal_content-active');
 
             /**
              * when the modal content is finished transitioning, fadeout the temporary
@@ -126,14 +125,14 @@ var Modal = (function () {
         event.stopImmediatePropagation();
 
         var target = event.target;
-        var div = document.getElementById('modal__temp');
+        var div = document.getElementById('modal_temp');
 
         /**
-         * make sure the modal__bg or modal__close was clicked, we don't want to be able to click
+         * make sure the modal_bg or modal_close was clicked, we don't want to be able to click
          * inside the modal and have it close.
          */
 
-        if (isOpen && target.classList.contains('modal__bg') || target.classList.contains('modal__close')) {
+        if (isOpen && target.classList.contains('modal_bg') || target.classList.contains('modal_close')) {
 
             // make the hidden div visible again and remove the transforms so it scales back to its original size
             div.style.opacity = '1';
@@ -145,17 +144,18 @@ var Modal = (function () {
              */
 
             for (var i = 0; i < len; i++) {
-                modals[i].classList.remove('modal--active');
-                content[i].classList.remove('modal__content--active');
+                modals[i].classList.remove('modal-active');
+                content[i].classList.remove('modal_content-active');
                 trigger[i].style.transform = 'none';
                 trigger[i].style.webkitTransform = 'none';
-                trigger[i].classList.remove('modal__trigger--active');
+                trigger[i].classList.remove('modal_trigger-active');
             }
 
             // when the temporary div is opacity:1 again, we want to remove it from the dom
             div.addEventListener('transitionend', removeDiv, false);
 
             isOpen = false;
+
 
         }
 
@@ -174,7 +174,7 @@ var Modal = (function () {
         for (var i = 0; i < len; i++) {
             trigger[i].addEventListener('click', getId, false);
             closers[i].addEventListener('click', close, false);
-            modalsbg[i].addEventListener('click', close, false);
+            // modalsbg[i].addEventListener('click', close, false);
         }
     };
 

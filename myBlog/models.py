@@ -1,14 +1,13 @@
-from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.db import models
 from mdeditor.fields import MDTextField
+from stdimage import StdImageField
 
 
 # 用户模型.
 # 第一种：采用的继承方式扩展用户信息（本系统采用）
 # 扩展：关联的方式去扩展用户信息
 class User(AbstractUser):
-    avatar = models.ImageField(upload_to='avatar/%Y/%m', default='avatar/default.png', max_length=200, blank=True,
-                               null=True, verbose_name='用户头像')
     qq = models.CharField(max_length=20, blank=True, null=True, verbose_name='QQ号码')
     mobile = models.CharField(max_length=11, blank=True, null=True, unique=True, verbose_name='手机号码')
     url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
@@ -51,27 +50,27 @@ class Category(models.Model):
 # 自定义一个文章Model的管理器
 class ArticleManager(models.Manager):
     def distinct_date(self):
-        distinct_date_list = []
         date_list = self.values('date_publish')
-        for date in date_list:
-            date = date['date_publish'].strftime('%Y/%m文章存档')
-            if date not in distinct_date_list:
-                distinct_date_list.append(date)
-        return distinct_date_list
+        # print(date_list.first().get("date_publish").strftime("%Y-%m-%d"))
+        data_set = set(map(lambda x: x.get('date_publish').strftime('%Y-%m') + "文章归档", date_list))
+        # print(list(data_set))
+        return list(data_set)
 
 
 # 文章模型
 class Article(models.Model):
     title = models.CharField(max_length=50, verbose_name='文章标题')
     desc = models.CharField(max_length=50, verbose_name='文章描述')
+    thumbnail = StdImageField(upload_to='thumbnail', variations={'thumbnail': (300, 300)},verbose_name='缩略图')
     # content = models.TextField(verbose_name='文章内容')
     content = MDTextField(verbose_name='文章内容')
     click_count = models.IntegerField(default=0, verbose_name='点击次数')
-    is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
+    # is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
     user = models.ForeignKey(User, verbose_name='用户', on_delete=models.CASCADE)
     category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类', on_delete=models.CASCADE)
     tag = models.ManyToManyField(Tag, verbose_name='标签')
+
     objects = ArticleManager()
 
     class Meta:
@@ -119,17 +118,17 @@ class Links(models.Model):
         return self.title
 
 
-# 广告
-class Ad(models.Model):
-    title = models.CharField(max_length=50, verbose_name='广告标题')
-    description = models.CharField(max_length=200, verbose_name='广告描述')
-    image_url = models.ImageField(upload_to='ad/%Y/%m', verbose_name='图片路径')
+# 幻灯片
+class Slide(models.Model):
+    title = models.CharField(max_length=50, verbose_name='幻灯片标题')
+    description = models.CharField(max_length=200, verbose_name='幻灯片描述')
+    image_url = models.ImageField(upload_to='slide/%Y/%m', verbose_name='图片路径')
     callback_url = models.URLField(null=True, blank=True, verbose_name='回调url')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
     index = models.IntegerField(default=999, verbose_name='排列顺序(从小到大)')
 
     class Meta:
-        verbose_name = u'广告'
+        verbose_name = u'幻灯片'
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
 

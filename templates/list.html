@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load myfilter %}
+
+{% block main_wrapper %}
+<div class="main-wrapper">
+
+    <section class="blog-list px-3 py-5 p-md-5">
+        <div class="container">
+
+            {% for article in article_list %}
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-3 img-fluid post-thumb d-none d-md-flex"
+                             src="uploads/{{ article.thumbnail }}" alt="image">
+                        <div class="media-body">
+                            <h3 class="title mb-1"><a
+                                    href="{% url 'article' %}?id={{ article.id }}">{{ article.title }}</a></h3>
+                            <div class="meta mb-1">
+                                <span class="date">发表于：{{ article.date_publish | date:'Y-m-d' }}</span>
+                                <span class="time">点击量：{{ article.click_count }}</span>
+                                <span class="comment">评论数：{{ article.comment_set.all.count }}</span>
+                            </div>
+                            <div class="intro">{{ article.desc }}</div>
+                            <a href="{% url 'article' %}?id={{ article.id }}">Read more</a>
+                        </div><!--//media-body-->
+                    </div><!--//media-->
+                </div><!--//item-->
+
+            {% endfor %}
+
+            {% include 'pagination.html' %}
+
+        </div>
+    </section>
+
+
+    {% include 'footer.html' %}
+</div><!--//main-wrapper-->
+{% endblock %}
